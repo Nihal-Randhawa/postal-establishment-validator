@@ -34,7 +34,7 @@ if uploaded_data_file:
             st.warning(f"⚠️ Missing factors for transaction codes: {missing_factors['transaction_code'].unique()}")
 
         # Calculate daily time
-        merged_data['Daily Time Taken in minutes'] = merged_data['item_value'] * merged_data['avg_time_factor']
+        merged_data['Daily Time Taken in minutes'] = merged_data['item_value'] * merged_data['avg_time_factor']/1500
 
         # Retain and reorder specified columns clearly
         final_df = merged_data[[
