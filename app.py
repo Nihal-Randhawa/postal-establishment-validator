@@ -38,7 +38,7 @@ if uploaded_data_file:
         if not missing_factors.empty:
             st.warning(f"⚠️ Missing time factors for transaction codes: {missing_factors['transaction_code'].unique()}")
 
-        merged_data['computed_time'] = merged_data['item_value'] * merged_data['avg_time_factor']
+        merged_data['computed_time'] = (merged_data['item_value'] * merged_data['avg_time_factor'])/30
 
         st.success("✅ Data processed successfully! Preview below:")
         st.dataframe(merged_data.head(20))
