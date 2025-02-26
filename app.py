@@ -43,7 +43,7 @@ if uploaded_data_file:
             "from_date",
             "transaction_description",
             "item_value",
-            "avg_time_factor"
+            "avg_time_factor",
             "Daily Time Taken in minutes"
         ]]
 
