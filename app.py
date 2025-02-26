@@ -56,7 +56,7 @@ if uploaded_data_file:
         st.success("✅ Data processed successfully! Preview below:")
         st.dataframe(final_df.head(20))
 
-        st.info(f"🧮 **Total Establishment Time Calculated:** {establishment_strength:.2f}")
+        st.info(f"🧮 **Total Hours of Establishment Time Calculated:** {establishment_strength:.2f}")
 
         # Append total establishment strength as the last row clearly
         buffer = BytesIO()
